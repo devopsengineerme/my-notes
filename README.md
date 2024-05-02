@@ -49,7 +49,32 @@ $ sudo yum install httpd
 ---start, enable, and check the status using systemctl command
 check the configuration file i.e /etc/httpd/conf/httpd.conf
 *******************************************************************************************
-
+total ports 0-65 535 ports are available
+ssh 22
+http 80
+https 443
+Mysql 3306
+SMTP 25
+_____________________________
+providing sudo access to the users
+$  use < /etc/sudoers > or visudo or /etc/sudoers.d/<user name>
+%<username> or <groupname> ALL=(ALL) <ALL or if we want to restrict the access we can give those only like /usr/bin/yum /usr/bin/systemctl>
+______________________________
+3 Tier Architecture
+Frontend tier --- Web application ( HTML, JAVA Script, node js, angularjs, reactjs)
+              --- servers ( nginx, apache, IIS)
+Backend tier --- (Java, python,.net)
+             --- (Jboss, tomcat etc....)
+DB tier  ---- ( MONGODB, Redis, Mysql, users)
+*******************************************************************************************
+keypair authentication
+.pem is the general format of the private key -- used in Gitbash
+.ppk is the putty private key --- used in putty
+to generate this .ppk file use puttygen app ( load .pem key to convert into .ppk) 
+____________________________________________________________
+winSCP -- it is a windows environment in the linux server
+it is used to tranfer the files from windows to linux or linux to windows quickly
+********************************************************************N
 
 
 
